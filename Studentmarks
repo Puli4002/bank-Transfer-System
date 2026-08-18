@@ -1,0 +1,63 @@
+class StudentMarksSystem:
+    def __init__(self):
+        self.students = []
+        print("Welcome to Student Marks System")
+
+    def add_student(self):
+        print("\nEnter Student Details")
+        name = input("Enter Name: ")
+        roll = input("Enter Roll Number: ")
+        python = int(input("Enter Python Marks: "))
+        java = int(input("Enter Java Marks: "))
+        sql = int(input("Enter SQL Marks: "))
+
+        total = python + java + sql
+        average = total / 3
+
+        student = {
+            "Name": name,
+            "Roll": roll,
+            "Python": python,
+            "Java": java,
+            "SQL": sql,
+            "Total": total,
+            "Average": average
+        }
+        self.students.append(student)
+        print("Student Added Successfully!")
+
+    def display_students(self):
+        if len(self.students) == 0:
+            print("\nNo Student Records Found")
+            return
+
+        print("\n------ Student Records ------")
+
+        for student in self.students:
+            print("Name:", student["Name"])
+            print("Roll:", student["Roll"])
+            print("Python:", student["Python"])
+            print("Java:", student["Java"])
+            print("SQL:", student["SQL"])
+            print("Total:", student["Total"])
+            print("Average:", round(student["Average"], 2))
+            print("----------------------------")
+system = StudentMarksSystem()
+
+while True:
+    print("\n===== MENU =====")
+    print("1. Add Student")
+    print("2. Display Students")
+    print("3. Exit")
+
+    choice = input("Enter Choice: ")
+
+    if choice == "1":
+        system.add_student()
+    elif choice == "2":
+        system.display_students()
+    elif choice == "3":
+        print("Thank You!")
+        break
+    else:
+        print("Invalid Choice")

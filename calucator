@@ -1,0 +1,52 @@
+class calculator:
+    def addition(self,a,b):
+        return a+b
+    def subtraction(self,a,b):
+        return a-b
+    def multiplication(self,a,b):
+        return a*b
+    def division(self,a,b):
+        if b== 0:
+            print("division by zero is not Available")
+        else:
+            return a/b
+    def percentage(self,a,b):
+        return (a*b)/100
+        
+object=calculator()
+
+while True:
+    print("---------Menu---------")
+    print("1. Addition")
+    print("2. Subtraction")
+    print("3. multipulication")
+    print("4. division")
+    print("5. Percentage")
+    print("6. Exist")
+    
+    choose= int(input("Choice the number from the list:"))
+    if choose not in [1,2,3,4,5,6]:
+        print("choose the option in menu")
+        continue
+
+    if choose == 6:
+        print("Thank You")
+        break
+    
+    a = int(input("Enter the number1:"))
+    b = int(input("Enter the number2:"))
+    
+    if choose == 1:
+        print(object.addition(a,b))
+    elif choose == 2:
+        print(object.subtraction(a,b))
+    elif choose == 3:
+        print(object.multiplication(a,b))
+    elif choose == 4:
+        print(object.division(a,b))
+    elif choose == 5:
+        print(object.percentage(a,b))
+    else:
+        print("Invalid option")
+
+

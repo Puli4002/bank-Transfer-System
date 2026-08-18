@@ -1,0 +1,25 @@
+balance=0
+while True:
+    print("------Menu for ATM ------")
+    print("1. deposit")
+    print("2. withdraw")
+    print("3. check balance")
+    print("4. Exit")
+
+    i=int(input("Choose the number in the list:"))
+
+    if i== 4:
+        print(" Thank You for using the ATM")
+        break
+    elif i==1:
+        amount=int(input("enter the amount to deposit:"))
+        balance += amount
+    elif i==2:
+        amount=int(input("Enter the amount to withdraw:"))
+        if amount>balance:
+            print("Insufficient Balance in your Account")
+        else:
+            balance -= amount
+    else:
+        if i==3:
+            print("Your Balance is :",balance)

@@ -1,0 +1,39 @@
+student_menu = {}
+
+while True:
+    print("\n------ Student Menu ------")
+    print("1. Add Student")
+    print("2. Display Students")
+    print("3. Exit")
+
+    choice = int(input("Choose the number in the menu: "))
+
+    if choice == 1:
+
+        name = input("Enter Student Name: ")
+        roll_no = input("Enter Roll Number: ")
+        mobile = input("Enter Mobile Number: ")
+
+        student_menu[name] = {
+            "Roll No": roll_no,
+            "Mobile Number": mobile
+        }
+
+        print("Student Added Successfully!")
+
+    elif choice == 2:
+            print("----- Student Details -----")
+            for name, details in student_menu.items():
+                print("Name :", name)
+                print("Roll No :", details["Roll No"])
+                print("Mobile Number :", details["Mobile Number"])
+
+
+    elif choice == 3:
+        print("Thank You!")
+        break
+
+    else:
+        print("Invalid Choice")
+
+
