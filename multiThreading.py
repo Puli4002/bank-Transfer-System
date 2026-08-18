@@ -24,3 +24,7 @@ head1=threading.Thread(target=act)
 head1.start()
 head2=threading.Thread(target=bike)
 head2.start()
+head.join()
+head1.join()
+head2.join()
+
