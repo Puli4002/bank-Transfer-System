@@ -4,7 +4,8 @@ menu={
       "Samosa" : 20,
       "Butter Chicken" : 400,
       "paneer Butter Masala" : 350,
-      "paneer rice": 150}
+      "paneer rice": 150,
+      "Egg roll" :200}
 while True:
     print("------Food Ordering System------")
     print("1. Display Items")
