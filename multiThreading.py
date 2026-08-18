@@ -24,16 +24,3 @@ head1=threading.Thread(target=act)
 head1.start()
 head2=threading.Thread(target=bike)
 head2.start()
-head3=threading.Thread(target=car)
-head3.start()
-head4=threading.Thread(target=horse)
-head4.start()
-head.join()
-head1.join()
-head2.join()
-head3.join()
-
-print("Successfully Done!")
-
-
-
