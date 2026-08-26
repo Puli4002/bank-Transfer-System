@@ -13,6 +13,9 @@ def bike():
 def car():
     time.sleep(18)
     print("car can reach in 18mins because of traffic")
+def horse():
+    time.sleep(9)
+    print("the horse can run fast than dog")
 
 
 head=threading.Thread(target=move)
@@ -21,14 +24,7 @@ head1=threading.Thread(target=act)
 head1.start()
 head2=threading.Thread(target=bike)
 head2.start()
-head3=threading.Thread(target=car)
-head3.start()
 head.join()
 head1.join()
 head2.join()
-head3.join()
-
-print("Successfully Done!")
-
-
 

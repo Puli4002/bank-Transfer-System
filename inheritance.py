@@ -13,4 +13,8 @@ class Savingsaccount(Bank):
         print("Rate of Interest:-",self.interest_rate)
 
 s=Savingsaccount("22591201000053","2547","7%")
+s1=Savingsaccount("2259120155436","2727","8%")
+s2=Savingsaccount("22591201000055","2047","2%")
 s.display()
+s1.display()
+s2.display()
