@@ -15,7 +15,6 @@ class calculator:
         return (a*b)/100
         
 object=calculator()
-
 while True:
     print("---------Menu---------")
     print("1. Addition")

@@ -11,6 +11,7 @@ class Student:
         print("Name:", self.name)
         print("Marks:", self.__marks)
 
+
 s = Student("Sai")
 s.self__marks=0 # we can't access the value out side the class 
 s.set_marks(47)
