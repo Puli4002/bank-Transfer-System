@@ -71,6 +71,5 @@ def main():
         print("FAILED - Money is not transfer")
 
 
-
 if __name__ == "__main__":
     main()
