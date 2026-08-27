@@ -69,8 +69,5 @@ def main():
         print("PASSED - Total money is Safe")
     else:
         print("FAILED - Money is not transfer")
-
-
-
 if __name__ == "__main__":
     main()
