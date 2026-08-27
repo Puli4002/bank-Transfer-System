@@ -3,7 +3,6 @@ from ledger_store import AccountStore
 from transfer_service import transfer_funds
 import uuid
 
-
 class BrokenCreditStore(AccountStore):
      def __init__ (self):
           super().__init__()
