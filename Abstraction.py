@@ -1,4 +1,5 @@
 from abc import ABC , abstractmethod
+
 class Bank(ABC):
     @abstractmethod
     def interest_rate(self):
